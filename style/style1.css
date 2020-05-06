@@ -67,11 +67,15 @@
    
     }
 img {
+    
     height: 250px;
     border: 2px solid rgb(179, 179, 0);
     margin-left: 160px;
     margin-top: 50px;
 }
+.img :hover {
+    height: 300px;
+    }
 .form {
     margin: 0 auto;
     width: 400px;
@@ -115,3 +119,13 @@ img {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+#img1, #img2 {
+
+    display: inline-block;
+    
+    }
+    #img3, #img4 {
+
+        display: inline-block;
+        
+        }
