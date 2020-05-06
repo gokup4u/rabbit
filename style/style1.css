@@ -11,7 +11,7 @@
   #welcome { 
     display: grid;
     background: linear-gradient(84deg,rgb(0, 51, 0),rgb(125, 224, 52), rgba(125, 224, 52, 0.3));
-    width: 100%;
+    width: 90%;
     justify-content: contain;
     height: 400px;
     padding-right: 130px;
@@ -31,10 +31,10 @@
     text-align: center;
     height: 100px;
     padding: 0 45px 100px 10px; 
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
     font-family: sans-serif;
-    transform: translate(80px,-120px);
+    transform: translate(60px,-100px);
     animation-name: fade;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -43,7 +43,7 @@
    
 }
 @keyframes fade {
-    0% {
+    20% {
       color: rgb(128, 0, 64);
       top: 0px;
       left:0px;
