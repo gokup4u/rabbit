@@ -13,7 +13,18 @@
   <div id="main">
    <main>
    <div id="welcome">
-    <header id="header"><h1>welcome to the rabbit world...</h1></header>
+    <header>
+      <h1 id="header">welcome to the rabbit world...</h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="html/housing.html">Housing</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Feeding</a></li>
+          <li><a href="#">Grooming</a></li>
+          <li><a href="#">Breeding</a></li> 
+        </ul>
+      </nav>
+    </header>
     <form class="form">
      <input type="text" value="search">
      <button type="submit">go</button>
@@ -43,16 +54,18 @@
       <div id="img3"><img src="img/doe3.jpg" alt= "lovely doe"></div>
       <div id="img4"><img src="img/image-8.jpg" alt= "lovely doe"></div>
    </div>
+   <footer id="footer">&copy; gokup4u 2020.</footer>
    </main>
    <div class="sidebar">
     <sidebar>
+      <h3>more about rabbits</h3>
     <div class="post">
-        <h3>more about rabbits</h3>
+        
         <h2 class="rabbit-house">Housing</h2>
 
         <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
 
-        <a href="html/housing.html">Lorem ipsum dolor sit amet.</a>
+        <a href="html/housing.html">continue reading...</a>
     </div>	
 
     <div class="post">
@@ -60,7 +73,7 @@
 
         <p class="post-text">Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">continue reading...</a>
     </div>
     <div class="side-bar">
 
@@ -70,7 +83,7 @@
         <p class="post-text">Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris.</p>
 
-        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">continue reading...</a>
     </div>
 
     <div class="post">
@@ -79,28 +92,36 @@
         <p class="post-text">Nisi ut aliquip ex ea commodo
         consequat, nuis aute irure.</p>
 
-        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">continue reading...</a>
      </div>
      <div class="post">
-        <h2 class="rabbit-grooming">Grooming</h2>
+        <h2 class="rabbit-breeding">Breeding</h2>
 
         <p class="post-text">Nisi ut aliquip ex ea commodo
         consequat, nuis aute irure.</p>
 
-        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">continue reading...</a>
      </div>
     </div>
   <div class="form">
-   <form><input id="input" type="text" value="username"/></form>
+    <form>
+      <p>Are you a member? Then sign in here:</p>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br/>
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password">
+    
    <ul>
        <li class="button">
         <button type= "submit">submit</button></li>
     </ul>
+    <p>Or register<a href="#"> for membership.</a></p>
+  </form>
 </sidebar>
   </div>
 </div>
  <br/>
-  <footer id="footer">copyright gokup4u 2020.</footer>
+  
 
  </body>
 </html>
