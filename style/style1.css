@@ -3,10 +3,26 @@
     background: linear-gradient(84deg,rgb(125, 224, 52), rgba(125, 224, 52, 0.3));
     font-size: 1.25em;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: repeat(auto-fit, 60% 40%);
+    grid-template-rows: auto auto;
+   
     grid-gap: 50px;
     width: 100%;
 }
+@media (max-width: 400px){
+  #main{
+    font-size: 1em;
+      grid-template-areas:
+      "header header header"
+      "advert content content"
+      "footer footer footer";
+  }
+}
+#footer {
+  grid-area: "footer";
+  
+}
+
 
   #welcome { 
     display: grid;
@@ -26,26 +42,30 @@
     transform: translate(80px,-5px);
     justify-content: justify;
 }
+#header :hover{
+  color: rgba(22, 9, 56, 0.911);
+  font-size: larger;
+  }
 #header {
     color: rgb(128, 0, 64);
     text-align: center;
-    height: 100px;
+    height: 50px;
     padding: 0 45px 100px 10px; 
-    font-size: 20px;
+    font-size: 1.5em;
     font-style: italic;
     font-family: sans-serif;
-    transform: translate(60px,-100px);
+    font-weight: bold;
+    transform: translate(90px,100px);
     animation-name: fade;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-   
 }
 @keyframes fade {
     20% {
       color: rgb(128, 0, 64);
-      top: 0px;
+      top: -10px;
       left:0px;
     }
     50% {
@@ -56,26 +76,31 @@
     }
     100% {
       color: rgb(172, 0, 230);
-      top: 0px;
+      top: -10px;
       left: -30px;
       transform: rotate(45deg);
     }
   }
-#header :hover {
-    color: rgba(73, 14, 209, 0.911);
-    font-size: larger;
-   
-    }
+      
 img {
-    
     height: 250px;
-    border: 2px solid rgb(179, 179, 0);
+    border: 2px solid rgb(41, 41, 2);
     margin-left: 160px;
     margin-top: 50px;
 }
 .img :hover {
     height: 300px;
     }
+.img {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      height: auto;
+      justify-content: center;
+      flex-wrap: wrap; 
+    }
+ 
+  
 .form {
     margin: 0 auto;
     width: 400px;
@@ -88,24 +113,11 @@ img {
     margin-left: 4em;
     align-content: center;
   }
-/*.description {
-    font-weight: 400;
-    font-style: normal;
-    text-align: justify;
-    padding-left: 100px;
+
+#footer {
+  display: flex;
+  flex-direction: row;
 }
-.article {
-    background: rgb(204, 0, 204);
-}#videoa {
-    width: 400px;
-    height: 220px;
-    float: right;
-    padding: 0 0 100px 0;
-    border-radius: 20%; 
-}
-#more {
-    background: rgb(153, 51, 255);
-}*/
 .post {
 	border: 2px solid rgb(229, 158, 66);
 	margin: 10px;
@@ -119,13 +131,3 @@ img {
 	margin-left: 5px;
 	margin-right: 5px;
 }
-#img1, #img2 {
-
-    display: inline-block;
-    
-    }
-    #img3, #img4 {
-
-        display: inline-block;
-        
-        }
