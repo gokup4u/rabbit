@@ -1,10 +1,9 @@
 body {
   background: radial-gradient(rgb(204, 255, 255),rgb(153, 255, 204),rgb(77, 255, 166));
   margin: 5px;
-  margin-top: 0px;
 }
 .header {
-  height: 100px;
+  height: 150px;
   position: relative;
   text-align: center;
   display: block;
@@ -30,10 +29,16 @@ transition: border-bottom 300ms;
 .nav-link a {
   text-decoration: none;
   color: rgb(115, 115, 115);
+  font-family: 'Sriracha', cursive;
+  font-weight: bold;
+  padding-left: 5px;
 }
 h1 {
 color: rgb(0, 68, 204);
-font-size: 4.5em;
+font-size: 5.5em;
+font-style: italic;
+padding-top: 25px;
+font-family: 'Suez One', serif;
 }
 img {
   width: 200px;
@@ -45,4 +50,13 @@ img {
   height: 25px;
   width: 25px;
   border-radius: 25%;
+}
+.pcontent {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.2em;
+}
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  
 }
