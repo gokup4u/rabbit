@@ -92,11 +92,12 @@ img {
   /*border: 2px;
   border-color: mediumpurple;
   border-style: solid;*/
+  margin: 15px;
   border-radius: 5%;
-  text-align: justify;
+  text-align: center;
   height: 65vw;
   width: 80%;
-  background: rgb(255, 102, 255);
+  background:rgb(179, 179, 0);
 }
 .form-content1 {
   padding-left: 25px;
