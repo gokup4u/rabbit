@@ -1,6 +1,6 @@
 body {
     background: radial-gradient(rgb(204, 255, 255),rgb(153, 255, 204),rgb(77, 255, 166));
-    margin: 0px;
+    margin:  0px;
     font-family: 'Lato', sans-serif;
   }
   .container{
@@ -64,7 +64,7 @@ body {
     .logo-img img{
       height: 35px;
       width: 35px;
-      border-radius: 25%;
+      border-radius: 10px 5px 15px 5px;
     }
     .footer-bar {
         display: flex;
