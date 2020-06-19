@@ -18,7 +18,6 @@ body {
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  background-color: wheat;
 }
 .nav-div {
   display: flex;
@@ -99,6 +98,20 @@ img {
   width: 80%;
   background:rgba(179, 179, 0, 0.55);
 }
-.form-content1 {
-  padding-left: 25px;
+form {
+  background: silver;
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  align-content: center;
+}
+input [type='email'], [type='password'] {
+  padding: 5px;
+  border: 1px solid black;
+}
+#button {
+  background: sienna;
+  color: white;
+  padding: 5px;
+  border-radius: 25%;
 }
