@@ -1,11 +1,13 @@
 body {
-  background: radial-gradient(rgb(204, 255, 255),rgb(153, 255, 204),rgb(77, 255, 166));
+  /*background: radial-gradient(rgb(204, 255, 255),rgb(153, 255, 204),rgb(77, 255, 166));*/
   margin: 10px;
   font-family: 'Lato', sans-serif;
+  
 }
 .container{
   display: grid;
   grid-template-columns: 1fr; 
+  height: 400px;
 }
 
 .header {
@@ -21,10 +23,11 @@ body {
 }
 .nav-div {
   display: flex;
- /* flex-direction: row;*/
+  background-color: #cbd448;
   justify-content: space-between;
   padding-right: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
+  align-content: center;
 }
 .nav-div > .nav-left > div {
 margin: 20px;
@@ -35,19 +38,26 @@ font-size: 0.9em;
   border-bottom: 1px solid transparent;
   transition: border-bottom 300ms;
   height: 20px;
+  padding-bottom: 15px;
 }
 .nav-link a {
   text-decoration: none;
-  color: rgb(154, 39, 189);
+  color: white;
   font-family: 'Sriracha', cursive;
   font-weight: bold;
   padding-left: 5px;
+  background: rgb(40, 145, 80);
+  padding: 20px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 10%;
  }
  .nav-div > .nav-left > div :hover {
    color: rgb(10, 10, 10);
+   background-color: yellowgreen;
  }
  .nav-link :hover {
-  border-bottom: 1px solid rgb(6, 35, 46);
+  border-bottom: 8px solid orange;
 }
 h1 {
 color: rgb(0, 68, 204);
@@ -70,6 +80,12 @@ img {
 .pcontent {
   font-family: 'Source Serif Pro', serif;
   font-size: 1.2em;
+  word-spacing: 4px;
+  margin-left: 10px;
+}
+h3 {
+  margin-left: 10px;
+word-spacing: 5px;
 }
 .main-wrapper {
     display: grid;
@@ -79,6 +95,9 @@ img {
       "main .blogspot"
       "main .blogspot";
     column-gap: 5px;
+    width: 1300px;
+    padding: 10px 5px 10px 0;
+    background-color: yellowgreen;
 }
 .footer-bar {
   display: flex;
@@ -88,15 +107,12 @@ img {
   background: rgb(117, 116, 116);
 }
 .blogspot {
-  /*border: 2px;
-  border-color: mediumpurple;
-  border-style: solid;*/
   margin: 15px;
   border-radius: 5%;
   text-align: center;
   height: 65vw;
-  width: 80%;
-  background:rgba(179, 179, 0, 0.55);
+  width: 90%;
+  background:rgba(11, 99, 80, 0.55);
 }
 form {
   background: silver;
@@ -104,14 +120,28 @@ form {
   width: 300px;
   height: 150px;
   align-content: center;
+  padding: 30px;
+  align-content: center;
+  margin-bottom: 10px;
 }
-input [type='email'], [type='password'] {
-  padding: 5px;
+input[type="password"] {
+  padding: 4px;
   border: 1px solid black;
+  width: 200px;
+}
+input [type="email"] {
+  padding: 4px;
+  border: 1px solid black;
+  width: 200px;
 }
 #button {
   background: sienna;
   color: white;
   padding: 5px;
   border-radius: 25%;
+}
+textarea {
+  width: 200px;
+  resize: none;
+  height: 80px;
 }
