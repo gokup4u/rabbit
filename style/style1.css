@@ -1,20 +1,24 @@
 body {
-  /*background: radial-gradient(rgb(204, 255, 255),rgb(153, 255, 204),rgb(77, 255, 166));*/
-  margin: 10px;
-  font-family: 'Lato', sans-serif;
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;  
 }
 .container{
   display: grid;
   grid-template-columns: 1fr; 
   height: 400px;
+  margin: 0 auto;
 }
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 .header {
   height: 150px;
   position: relative;
   padding-bottom: 100px;
-  text-align: center;
+  text-align: bottom left;
   display: block;
   background: url("../img/new.jpg");
   background-position: center; 
@@ -28,6 +32,8 @@ body {
   padding-right: 20px;
   padding-top: 20px;
   align-content: center;
+  position: fixed;
+  width: 1000px;
 }
 .nav-div > .nav-left > div {
 margin: 20px;
@@ -57,10 +63,10 @@ font-size: 0.9em;
    background-color: yellowgreen;
  }
  .nav-link :hover {
-  border-bottom: 8px solid orange;
+  border-bottom: 8px solid hsl(39, 100%, 50%);
 }
 h1 {
-color: rgb(0, 68, 204);
+color: gold;
 font-size: 5.5em;
 font-style: italic;
 padding-top: 25px;
@@ -71,11 +77,14 @@ img {
   height:200px;
   border-radius: 35%;
   border: solid;
+  transform: translate(50px, 0);
 }
 .logo-img img{
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border-radius: 10px 5px 15px 5px;
+  transform: translate(300px, 0);
+  border: hotpink 2px solid;
 }
 .pcontent {
   font-family: 'Source Serif Pro', serif;
@@ -105,6 +114,7 @@ word-spacing: 5px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background: rgb(117, 116, 116);
+  height: 80px;
 }
 .blogspot {
   margin: 15px;
@@ -117,31 +127,39 @@ word-spacing: 5px;
 form {
   background: silver;
   border: 1px solid black;
-  width: 300px;
-  height: 150px;
+  width: 450px;
+  height: 250px;
   align-content: center;
-  padding: 30px;
-  align-content: center;
+  padding: 10px 0  5px 0;
+  justify-content: space-around;
   margin-bottom: 10px;
 }
 input[type="password"] {
-  padding: 4px;
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
+  height: 20px;
 }
-input [type="email"] {
-  padding: 4px;
+#email {
+  height: 20px;
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
 }
 #button {
   background: sienna;
   color: white;
   padding: 5px;
   border-radius: 25%;
+  width: 250px;
+}
+#button :hover {
+  background: rgb(12, 12, 12);
+  color: white;
+  padding: 10px;
+  border-radius: 25%;
 }
 textarea {
-  width: 200px;
+  width: 250px;
   resize: none;
-  height: 80px;
+  height: 100px;
+  border: 1px solid black;
 }
