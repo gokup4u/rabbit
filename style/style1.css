@@ -90,7 +90,6 @@ img {
   font-family: 'Source Serif Pro', serif;
   font-size: 1.2em;
   word-spacing: 4px;
-  margin-left: 10px;
 }
 h3 {
   margin-left: 10px;
@@ -107,6 +106,10 @@ word-spacing: 5px;
     width: 1300px;
     padding: 10px 5px 10px 0;
     background-color: yellowgreen;
+}
+main-content {
+  padding: 10px;
+  background: rgb(206, 200, 198);
 }
 .footer-bar {
   display: flex;
@@ -127,10 +130,9 @@ word-spacing: 5px;
 form {
   background: silver;
   border: 1px solid black;
-  width: 450px;
-  height: 250px;
+  width: 400px;
   align-content: center;
-  padding: 10px 0  5px 0;
+  padding: 10px;
   justify-content: space-around;
   margin-bottom: 10px;
 }
